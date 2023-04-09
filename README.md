@@ -1,39 +1,57 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Lorem Ipsum Generator
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+A Dart package for generating Lorem Ipsum text.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+## Installation
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Add this to your pubspec.yaml file:
 
-## Features
+```dart
+dependencies:
+  lorem_ipsum_generator: ^0.0.1
+```
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Then run flutter packages get to install the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+Import the package:
 
 ```dart
-const like = 'sample';
+import 'package:lorem_ipsum_generator/lorem_ipsum_generator.dart';
 ```
 
-## Additional information
+### Generating text with a specified number of words
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+```dart
+String text = LoremIpsumGenerator.generate(words: 10);
+print(text); // Output: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+```
+
+### Generating text with a specified number of paragraphs
+
+```dart
+String text = LoremIpsumGenerator.generate(paragraphs: 3);
+print(text);
+/*
+Output:
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+*/
+```
+
+### Generating text with a specified number of words per paragraph
+
+```dart
+String text = LoremIpsumGenerator.generate(wordsPerParagraph: 20, paragraphs: 2);
+print(text);
+/*
+Output:
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+
+Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+*/
+```

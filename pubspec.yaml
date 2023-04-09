@@ -1,10 +1,10 @@
 name: lorem_ipsum_generator
 description: A starting point for Dart libraries or applications.
-version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+version: 0.0.1
+homepage: https://github.com/SamanKC/lorem_ipsum_generator
 
 environment:
-  sdk: '>=2.19.6 <3.0.0'
+  sdk: ">=2.19.6 <3.0.0"
 
 # dependencies:
 #   path: ^1.8.0
