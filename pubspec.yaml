@@ -1,6 +1,6 @@
 name: lorem_ipsum_generator
-description: The lorem_ipsum package is a lightweight and easy-to-use tool for generating random "lorem ipsum" text. It allows users to generate text with a specific number of words or paragraphs and includes a customizable list of words for a more natural look and feel. Ideal for developers who need to quickly generate filler text for testing or mockup purposes.
-version: 0.0.1
+description: lorem_ipsum_generator uses a straightforward API and customizable settings to generate random "lorem ipsum" text.
+version: 0.0.3
 homepage: https://github.com/SamanKC/lorem_ipsum_generator
 
 environment:

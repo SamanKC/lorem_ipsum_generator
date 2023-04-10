@@ -1,6 +1,6 @@
 # Lorem Ipsum Generator
 
-A Dart package for generating Lorem Ipsum text.
+The lorem_ipsum package provides a simple API for generating random "lorem ipsum" text with a configurable number of words or paragraphs. It's an ideal choice for developers who need a quick and easy way to add realistic-looking filler text to their applications or designs.
 
 ## Installation
 
@@ -19,6 +19,20 @@ Import the package:
 
 ```dart
 import 'package:lorem_ipsum_generator/lorem_ipsum_generator.dart';
+```
+
+### Basic example for usage of the package
+
+```dart
+import 'package:lorem_ipsum/lorem_ipsum.dart';
+
+void main() {
+  // Generate 10 words of "lorem ipsum" text
+  final text = LoremIpsumGenerator.generate(words: 10);
+
+  print(text);
+  // Output: "incididunt veniam, irure nostrud fugiat sed dolor ex dolore excepteur ullamco veniam,"
+}
 ```
 
 ### Generating text with a specified number of words
